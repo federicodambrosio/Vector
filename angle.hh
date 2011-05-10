@@ -4,7 +4,7 @@
 #define ANGLE_H_
 using namespace std;
 
-class degree {
+/*class degree {
 	int DEG;
 	int FIRSTS;
 	int SECONDS;
@@ -29,7 +29,7 @@ public:
 	friend degree operator+(degree& a, degree& b);
 	friend degree operator-(degree& a, degree& b);
 	friend ostream& operator<<(ostream& output, degree& a);
-	}; 
+	}; */
 	
 	
 class angle {
@@ -38,13 +38,13 @@ class angle {
 public:
 	angle(){RAD=0;}
 	angle(double rad){RAD=rad;}
-	angle(degree a){
+	/*angle(degree a){
 		RAD=a.rad();
-	}
+	}*/
 	~angle(){}
 	
 	double rad(){return RAD;}
-	degree deg();
+	//degree deg();
 	
 	friend angle operator+(angle& a, angle& b);
 	friend angle operator-(angle& a, angle& b);

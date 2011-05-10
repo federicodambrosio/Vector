@@ -2,7 +2,7 @@
 #define ANGLE_CC_
 #include "angle.hh"
 
-degree::degree(double n){
+/*degree::degree(double n){
 	DEG=int(n);
 	double rest=n-DEG;
 	FIRSTS=int(rest*60);
@@ -51,7 +51,7 @@ ostream& operator<<(ostream& output, degree& a){
 degree angle::deg(){
 	degree result(RAD);
 	return result;
-	}
+	}*/
 
 angle operator+(angle& a, angle& b){
 	double rad=a.rad()+b.rad();
@@ -67,8 +67,8 @@ angle operator-(angle& a, angle& b){
 
 ostream& operator<<(ostream& output, angle& a){
 	double f=a.rad();
-	degree g=a.deg();
-	output<<f<<" rad or "<<g;
+	//degree g=a.deg();
+	output<<f<<" rad";
 	return output;
 }
 
